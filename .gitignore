@@ -41,6 +41,7 @@ vignettes/*.pdf
 # R ignore folder
 Trans*/
 Figure/
+Datafile/
 Backup/
 /*.png
 /*.csv
