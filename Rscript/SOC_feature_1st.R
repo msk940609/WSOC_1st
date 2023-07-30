@@ -648,3 +648,10 @@ ggplot()+
 
 
 
+cor_1st_sep_nt2_soc
+
+cor_all=rbind(cor_1st_sep_ul2_soc,cor_1st_sep_bj2_soc,cor_1st_sep_ss2_soc,cor_1st_sep_sul2_soc,cor_1st_sep_nt2_soc)
+cor_all_grey=rbind(cor_1st_sep_ul2_soc,cor_1st_sep_bj2_soc,cor_1st_sep_ss2_soc,cor_1st_sep_sul2_soc,cor_1st_sep_nt2_soc)
+
+
+

@@ -83,6 +83,5 @@ fm_list_all2=frd_fm_intyavg %>% left_join(fm_list_all)
 fm_list_all2
 
 frd_merge$Bromo.Inty=ifelse(frd_merge$pd=="1st",frd_merge$Bromo.Inty*10000,frd_merge$Bromo.Inty)
-
 frd_merge
 

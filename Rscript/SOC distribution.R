@@ -29,7 +29,6 @@ envi_3rd$SOC=envi_3rd$WSOCnbb
 envi_3rd$POC=envi_3rd$WSOCbb+envi_3rd$WISOC
 envi_3rd$Season="Spring"
 
-
 envi_1st_sel=envi_1st[,c("Group","No","Season","Event","Date","PM2.5","OC","POC","SOC")]
 envi_2nd_sel=envi_2nd[,c("Group","No","Season","Event","Date","PM2.5","OC","POC","SOC")]
 envi_3rd_sel=envi_3rd[,c("Group","No","Season","Event","Date","PM2.5","OC","POC","SOC")]
@@ -703,15 +702,13 @@ for (i in 1:length(grp)) {
 cor_stat
 
 soc_all
-
-?facet_grid2
-
 soc_all_sel=subset(soc_all,soc_all$SOCp<100)
 
 soc_all_sel1=subset(soc_all_sel,soc_all_sel$Group!="Noto")
 soc_all_sel2=subset(soc_all_sel,soc_all_sel$Group=="Noto") %>% filter(Season%in%c("Winter","Summer"))
 
 soc_all_sel=rbind(soc_all_sel1,soc_all_sel2)
+
 soc_all_sel$sslab=factor(soc_all_sel$Season, levels = c("Winter","Summer","Spring"),
                          labels = c(expression(bold("1"^"st"~"(Winter)")),
                                     expression(bold("2"^"nd"~"(Summer)")),
@@ -772,3 +769,6 @@ ggplot(soc_all_sel,aes(x=PM2.5,y=SOCp, col=Grouplab2),shape=21)+
         legend.position = "NULL")+
   guides(fill=guide_legend(title = "", reverse = T, override.aes = list(size=8)))+
   ggsave(filename("pmvsSOC_all"),height = 45, width = 75, units = "cm", dpi = 300)
+
+
+

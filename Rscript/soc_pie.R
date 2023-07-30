@@ -6,17 +6,8 @@ cor_1st_sep_nt2_soc
 
 
 soc_cor_1st=rbind(cor_1st_sep_ul2_soc,cor_1st_sep_bj2_soc,cor_1st_sep_ss2_soc,cor_1st_sep_sul2_soc,cor_1st_sep_nt2_soc)
-soc_cor_2nd=rbind(cor_2nd_sep_ul2_soc,cor_2nd_sep_bj2_soc,cor_2nd_sep_ss2_soc,cor_2nd_sep_sul2_soc,cor_2nd_sep_nt2_soc)
-soc_cor_3rd=rbind(cor_3rd_sep_ul2_soc,cor_3rd_sep_bj2_soc,cor_3rd_sep_ss2_soc,cor_3rd_sep_sul2_soc,cor_3rd_sep_nt2_soc)
-
 soc_cor_1st
-soc_cor_2nd
-soc_cor_3rd
-
-
-soc_cor_all=rbind(soc_cor_1st,
-                  soc_cor_2nd,
-                  soc_cor_3rd)
+soc_cor_all=rbind(soc_cor_1st)
 
 soc_cor_all
 

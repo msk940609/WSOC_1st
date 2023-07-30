@@ -401,7 +401,6 @@ comp_dis$Sample=paste(comp_dis$Sampling, comp_dis$Group, comp_dis$No, sep = "_")
 comp_dis$No=as.numeric(comp_dis$No)
 head(comp_dis)
 
-
 comp_dis$Grouplab=factor(comp_dis$Group,
                      levels = c("Ulaanbaatar","Beijing","Seosan","Seoul","Noto"),
                      labels = c("UB","BJ","SS","SE","NT"))
@@ -441,7 +440,6 @@ ggplot(comp_dis, aes(x=as.factor(No), y=rel, fill=Comp))+
   )+
   ggsave(filename("comp_distribution"),height = 75, width = 90, units = "cm", dpi = 300, compression="lzw")
   
-
 
 comp_dis_avg=aggregate(comp_dis$rel,by=list(Grouplab=comp_dis$Grouplab, pdlab=comp_dis$pdlab, Comp=comp_dis$Comp),mean)
 comp_dis_avg

@@ -73,6 +73,7 @@ library(ggh4x)
 library(spData)
 library(viridis)
 library(tmap)
+library(patchwork)
 
 
 
