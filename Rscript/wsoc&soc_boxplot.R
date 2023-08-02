@@ -55,7 +55,6 @@ ggplot()+
 
 
 
-
 ##chp====
 frd_merge_soc$NO3=frd_merge_soc$O./3*frd_merge_soc$N.
 frd_merge_soc$SO4=frd_merge_soc$O./4*frd_merge_soc$S.
