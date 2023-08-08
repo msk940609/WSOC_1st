@@ -46,3 +46,4 @@ Backup/
 /*.png
 /*.csv
 /*.txt
+.RData*
