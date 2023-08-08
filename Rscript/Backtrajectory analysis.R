@@ -1,8 +1,6 @@
-library(openair)
 
-cluster::pam()
 mapproj::mapproject()
-env=fread("Datafile/Envi_2019.csv")
+env=fread("Datafile/") %>% %>% %>% %>% %>% 
 env_bj=subset(env,env$Group=="Beijing")
 #env_se=subset(env_2d,env_2d$group=="Seoul")
 traj_bj_18 <- readRDS("Datafile/traj/TrajData_BJ_w2018.rds")
@@ -1021,3 +1019,4 @@ ggplot(data=cl_env_sel_m_s, aes(x=Group,y=value, fill=Cluster))+
   guides(fill=guide_legend(title = "Cluster",ncol=6))+
   ggsave(filename("envi_bycluster_summer"),height = 45, width = 50, units = "cm", dpi = 300, compression="lzw")
 
+%>% %>% %>% %>% %>% %>% %>% %>% %>% %>% %>% %>% %>% %>% 

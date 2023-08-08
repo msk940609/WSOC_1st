@@ -45,7 +45,7 @@ soc_dis_inty_m$Pdlab=factor(soc_dis_inty_m$Pd,levels = c("1st","2nd","3rd"),
 
 
 soc_dis_inty_m$Grouplab=factor(soc_dis_inty_m$Group, levels = c("Ulaanbaatar","Beijing","Seosan","Seoul","Noto"),
-                        labels = c(expression(bold("UB")),
+                        labels = c(expression(bold("UT")),
                                    expression(bold("BJ")),
                                    expression(bold("SS")),
                                    expression(bold("SE")),
@@ -182,7 +182,7 @@ soc_dis_m$Pdlab=factor(soc_dis_m$Pd,levels = c("1st","2nd","3rd"),
 
 
 soc_dis_m$Grouplab=factor(soc_dis_m$Group, levels = c("Ulaanbaatar","Beijing","Seosan","Seoul","Noto"),
-                          labels = c(expression(bold("UB")),
+                          labels = c(expression(bold("UT")),
                                      expression(bold("BJ")),
                                      expression(bold("SS")),
                                      expression(bold("SE")),

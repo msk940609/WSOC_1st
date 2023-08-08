@@ -4,7 +4,9 @@ samp=fread("Datafile/sampling_point.csv")
 samp
 
 ##1-2) pm trend=====
-envi_1st=ev_1st
+
+envi_1st=fread("Datafile/FRIEND_1st_envi_re.csv")
+#envi_1st=ev_1st
 envi_1st$WISOC=envi_1st$OC-envi_1st$WSOC
 envi_1st$WSOCbb=2.94*envi_1st$Levoglucosan
 envi_1st$WSOCnbb=envi_1st$WSOC-envi_1st$WSOCbb
@@ -67,7 +69,7 @@ FT_envi_trend_ul_na=FT_envi_trend_ul[is.na(FT_envi_trend_ul$OC), ]
 
 
 pmtrend_ul=ggplot()+
-  geom_blank(data = FT_envi_trend2_all_pm ,aes(x=date2, y=value*1.1 ))+
+  #geom_blank(data = FT_envi_trend2_all_pm ,aes(x=date2, y=value*1.1 ))+
   geom_area(data = FT_envi_trend_ul ,aes(x=date2 , y=conc2,fill=type,col=type),lty=1,position = position_stack(reverse = T),size=2,na.rm = T)+
   geom_area(data = FT_envi_trend_ul ,aes(x=date2 , y=conc2,fill=type),position = position_stack(reverse = T),size=1.5,na.rm = T)+
   geom_rect(data=FT_envi_trend_ul_na,aes(xmin=date2-3600*12,xmax=date2+3600*12, ymin=-Inf, ymax=Inf), fill="white")+

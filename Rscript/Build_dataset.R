@@ -1,5 +1,5 @@
 
-ft_1st
+ft_1st=fread("Datafile/FRIEND_1st.csv")
 
 frd_merge=rbind(ft_1st)
 frd_merge$id=frd_merge$Sample
@@ -86,3 +86,5 @@ fm_list_all2
 frd_merge$Bromo.Inty=ifelse(frd_merge$pd=="1st",frd_merge$Bromo.Inty*10000,frd_merge$Bromo.Inty)
 frd_merge
 #frd_merge_raw=frd_merge
+min(frd_merge$cnt)
+

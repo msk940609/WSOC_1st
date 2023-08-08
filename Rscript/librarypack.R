@@ -74,9 +74,8 @@ library(spData)
 library(viridis)
 library(tmap)
 library(patchwork)
-
-
-
+library("ggpattern")
+library(sf)
 #not installed
 Sys.setlocale("LC_TIME","english")
 options(digits=10) # Sig figs in mass resolution data
@@ -93,4 +92,5 @@ labs[1:(length(labs)-n_minor)]}
 insert_minor_2 <- function(major_labs, n_minor) {labs <- 
   c( sapply( major_labs, function(x) c(x, rep("", 1) ) ) )
 labs[1:(length(labs)-n_minor)]}
+
 

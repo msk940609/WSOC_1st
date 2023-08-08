@@ -119,3 +119,6 @@ vk_ub=ggplot()+
         legend.box = "horizontal",
         legend.background = element_blank(),
   )
+
+vk_ub
+
